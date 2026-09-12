@@ -270,7 +270,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/Backgrounds/room-dark.png"
+spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/Backgrounds/storm-trooper.png"
 spawn-sh-at-startup "swayidle -w"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
@@ -367,12 +367,10 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Brave" { spawn "brave-origin"; }
+    Mod+E hotkey-overlay-title="Open a File Explorer" { spawn "thunar"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     
-    // Restart waybar
-    Mod+E hotkey-overlay-title="Restart Waybar" { spawn-sh "pkill waybar || exec waybar"; }
-
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
