@@ -275,7 +275,8 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "mako"
-spawn-sh-at-startup "dex -a"
+spawn-sh-at-startup "/usr/bin/nextcloud --background"
+spawn-sh-at-startup "/opt/1Password/1password --silent"
 spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/Backgrounds/storm-trooper.png"
 spawn-sh-at-startup "swayidle -w"
 
