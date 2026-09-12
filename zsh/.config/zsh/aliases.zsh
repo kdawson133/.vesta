@@ -2,6 +2,11 @@
 
 # Listing
 alias ls='ls --color=auto'
+# alias ll='ls -lah --color=auto'
+# alias ld='ls -d */'
+# alias l.='ls -a --color=auto'
+
+# alias ls='eza --group-directories-first --icons=auto --color=auto'
 alias ll='eza -la --icons=auto'
 alias ld='eza -D --icons=auto'
 alias l.='eza -a --icons=auto'
